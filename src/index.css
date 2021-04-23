@@ -4,24 +4,8 @@
 /* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-.rich-black {
-  color: #000814ff;
-}
-
-.oxford-blue {
-  color: #001d3dff;
-}
-
-.prussian-blue {
-  color: #003566ff;
-}
-
-.mikado-yellow {
-  color: #ffc300ff;
-}
-
-.gold-web {
-  color: #ffd60aff;
+.white {
+  color: #fff;
 }
 
 .poppins {
