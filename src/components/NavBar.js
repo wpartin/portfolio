@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
     <header className="bg-blue-900">
       <div className="container mx-auto flex flex-col md:flex-row justify-between">
-        <nav className="flex flex-col items-center md:items-left md:flex-row w-screen md:pl-24">
+        <nav className="flex flex-col items-center md:items-left md:flex-row w-screen md:pl-12 lg:pl-24">
           <div className="flex">
             <NavLink
               to="/"
@@ -41,7 +41,7 @@ export default function NavBar() {
             </NavLink>
           </div>
         </nav>
-        <div className="inline-flex justify-center py-3 px-3 mb-3 md:my-6 md:pr-24">
+        <div className="inline-flex justify-center py-3 px-3 mb-3 md:my-6 md:pr-12 lg:pr-24">
           <SocialIcon
             url="http://linkedin.com/"
             className="mr-4"
