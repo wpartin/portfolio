@@ -43,7 +43,7 @@ export default function NavBar() {
         </nav>
         <div className="inline-flex justify-center py-3 px-3 mb-3 md:my-6 md:pr-12 lg:pr-24">
           <SocialIcon
-            url="http://linkedin.com/"
+            url="https://www.linkedin.com/in/weston-edward-partin/"
             className="mr-4"
             target="_blank"
             fgColor="#fff"
