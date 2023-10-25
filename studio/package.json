@@ -23,6 +23,6 @@
     "react-dom": "^18.2.0",
     "sanity": "^3.18.1",
     "styled-components": "^5.3.11",
-    "wepack": "^0.0.1"
+    "wepack": "^5.0.0"
   }
 }
