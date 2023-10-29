@@ -49,20 +49,6 @@ export default function NavBar() {
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
           />
-          <SocialIcon
-            url="http://twitter.com/"
-            className="mr-4"
-            target="_blank"
-            fgColor="#fff"
-            style={{ height: 35, width: 35 }}
-          />
-          <SocialIcon
-            url="http://youtube.com/"
-            className="mr-4"
-            target="_blank"
-            fgColor="#fff"
-            style={{ height: 35, width: 35 }}
-          />
         </div>
       </div>
     </header>
