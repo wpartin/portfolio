@@ -15,6 +15,7 @@
     "sanity"
   ],
   "dependencies": {
+    "@sanity/code-input": "^4.1.1",
     "@sanity/components": "^2.2.6",
     "@sanity/ui": "^1",
     "@sanity/vision": "^3.18.1",
@@ -23,6 +24,6 @@
     "react-dom": "^18.2.0",
     "sanity": "^3.18.1",
     "styled-components": "^5.3.11",
-    "wepack": "^5.0.0"
+    "webpack": "^5.0.0"
   }
 }
