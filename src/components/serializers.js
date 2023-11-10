@@ -1,5 +1,5 @@
 import { solarizedDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import { SyntaxHighlighter } from "react-syntax-syntax-highlighter";
+import { SyntaxHighlighter } from "react-syntax-highlighter";
 
 export const serializers = {
   types: {
