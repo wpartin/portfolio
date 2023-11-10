@@ -1,5 +1,5 @@
-const CodeBlockSerializer = (props) => {
-  return <code>{props.children}</code>;
+const CodeBlockSerializer = ({ node }) => {
+  return <code>{node.code}</code>;
 };
 
 export const serializers = {
