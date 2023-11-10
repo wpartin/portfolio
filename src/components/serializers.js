@@ -1,9 +1,5 @@
 const CodeBlockSerializer = (props) => {
-  return (
-    <pre>
-      <code>{props.children}</code>
-    </pre>
-  );
+  return <code>{props.children}</code>;
 };
 
 export const serializers = {
