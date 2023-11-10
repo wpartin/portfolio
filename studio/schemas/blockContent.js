@@ -63,7 +63,6 @@ export default {
     },
     {
       type: "code",
-      options: { hotspot: true },
     },
   ],
 };
