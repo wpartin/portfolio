@@ -1,5 +1,9 @@
 const CodeBlockSerializer = ({ node }) => {
-  return <code>{node.code}</code>;
+  return (
+    <pre>
+      <code>{node.code}</code>;
+    </pre>
+  );
 };
 
 export const serializers = {
