@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import sanityClient from "../client";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
+import { serializers } from "./serializers";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -66,6 +67,7 @@ export default function SinglePost() {
         <div className="px-8 lg:px-48 py-6 lg:py-20 prose lg:prose-xl max-w-full">
           <BlockContent
             blocks={singlePost.body}
+            serializers={serializers}
             projectId="22eiy0sq"
             dataset="production"
           />
