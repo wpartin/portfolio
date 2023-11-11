@@ -3,7 +3,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 
 const CodeBlockSerializer = ({ node }) => {
   let language = node.language || "text";
-  if (language === "golang") {
+  if (language === "go") {
     language = "go";
   }
   return (
