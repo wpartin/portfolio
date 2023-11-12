@@ -1,14 +1,11 @@
-import { solarizedDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { solarizeddark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 
-const CodeBlockSerializer = ({ node }) => {
-  let language = node.language || "text";
-  if (language === "go") {
-    language = "go";
-  }
+const CodeBlockSerializer = ({ props }) => {
+  const { code, language } = props;
   return (
-    <SyntaxHighlighter language={language} style={solarizedDark}>
-      {node.code}
+    <SyntaxHighlighter language={language} style={solarizeddark}>
+      {code}
     </SyntaxHighlighter>
   );
 };
