@@ -3,16 +3,53 @@ import { useParams } from "react-router-dom";
 import sanityClient from "../client";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
-import { serializers } from "./serializers";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { a11yDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
   return builder.image(source);
 }
 
+const code = `
+package main
+
+import (
+    "fmt"
+    "os"
+)
+
+func main () {
+    var s, sep string
+
+    for i := 0; i < len(os.Args); i++ {
+        s += sep + os.Args[i]
+        sep = " "
+    }
+    fmt.Println(s)
+}
+`;
+
 export default function SinglePost() {
   const [singlePost, setSinglePost] = useState(null);
   const { slug } = useParams();
+  const serializers = {
+    types: {
+      code: ({ node }) => {
+        let language;
+        if (node.language === "golang") {
+          language = "go";
+        } else if (node.language === "sh") {
+          language = "shellSession";
+        }
+        return (
+          <SyntaxHighlighter language={language} style={a11yDark}>
+            {node.code}
+          </SyntaxHighlighter>
+        );
+      },
+    },
+  };
 
   useEffect(() => {
     sanityClient

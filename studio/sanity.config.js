@@ -1,6 +1,6 @@
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
-import schemas from "./schemas/schema";
+import { schemas } from "./schemas/schema";
 import { codeInput } from "@sanity/code-input";
 
 export default defineConfig({
