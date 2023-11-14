@@ -25,14 +25,8 @@ export default function Post() {
   }, []);
 
   return (
-    <main className="bg-blue-100 min-h-screen p-6 lg:p-12">
+    <main className="bg-gray-800 min-h-screen p-6 lg:p-12">
       <section className="container mx-auto">
-        <h1 className="text-5xl flex text-center justify-center poppins mb-6">
-          Blog Posts Page
-        </h1>
-        <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-          This is my page of blog posts
-        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {postData &&
             postData.map((post, index) => (
@@ -48,7 +42,7 @@ export default function Post() {
                       className="w-full h-full rounded-r object-cover absolute"
                     />
                     <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
-                      <h3 className="text-gray-800 text-lg font-bold px-3 py-4 bg-blue-700 text-blue-100 bg-opacity-75 rounded">
+                      <h3 className="text-white text-lg font-bold px-3 py-4 bg-blue-700 text-white bg-opacity-75 rounded">
                         {post.title}
                       </h3>
                     </span>

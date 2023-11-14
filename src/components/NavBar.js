@@ -1,41 +1,41 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+import logo from "../logo.png";
 
 export default function NavBar() {
   return (
-    <header className="bg-blue-900">
+    <header className="bg-gray-100">
       <div className="container mx-auto flex flex-col md:flex-row justify-between">
         <nav className="flex flex-col items-center md:items-left md:flex-row w-screen md:pl-12 lg:pl-24">
           <div className="flex">
             <NavLink
               to="/"
               exact
-              activeClassName="text-yellow-400"
-              className="inline-flex items-center text-white pt-6 md:py-6 px-3 mr-4 hover:text-yellow-400 text-4xl font-bold poppins tracking-widest"
+              className="inline-flex items-center text-gray-700 pt-6 md:py-6 px-3 mr-4 hover:text-blue-500 text-4xl font-bold poppins tracking-widest"
             >
-              Weston
+              <img src={logo} alt="logo" className="flex-shrink w-64 h-16" />
             </NavLink>
           </div>
           <div className="flex">
             <NavLink
               to="/post"
-              activeClassName="text-blue-100 bg-blue-700"
-              className="inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-yellow-400"
+              activeClassName="text-gray-100 bg-blue-300"
+              className="inline-flex items-center py-3 px-3 my-6 rounded text-gray-700 hover:text-blue-500"
             >
               Blog Posts
             </NavLink>
             <NavLink
               to="/project"
-              activeClassName="text-blue-100 bg-blue-700"
-              className="inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-yellow-400"
+              activeClassName="text-black bg-blue-300"
+              className="inline-flex items-center py-3 px-3 my-6 rounded text-gray-900 hover:text-blue-500"
             >
               Projects
             </NavLink>
             <NavLink
               to="/about"
-              activeClassName="text-blue-100 bg-blue-700"
-              className="inline-flex items-center py-3 px-3 my-6 rounded text-white hover:text-yellow-400"
+              activeClassName="text-black bg-blue-300"
+              className="inline-flex items-center py-3 px-3 my-6 rounded text-gray-900 hover:text-blue-500"
             >
               About Me
             </NavLink>

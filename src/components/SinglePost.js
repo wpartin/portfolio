@@ -57,15 +57,15 @@ export default function SinglePost() {
   if (!singlePost) return <div>Loading...</div>;
 
   return (
-    <main className="bg-gray-200 min-h-screen p-6 lg:p-12">
-      <article className="container shadow-lg mx-auto bg-blue-100 rounded-lg">
+    <main className="bg-gray-800 min-h-screen p-6 lg:p-12">
+      <article className="bg-gray-100 container shadow-lg mx-auto rounded-lg">
         <header className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-4 lg:p-8">
-            <div className="bg-white bg-opacity-75 rounded p-6 lg:p-12">
-              <h1 className="poppins text-3xl lg:text-6xl mb-4">
+            <div className="bg-gray-300 bg-opacity-75 rounded p-6 lg:p-12">
+              <h1 className="poppins text-gray-800 text-3xl lg:text-5xl mb-4">
                 {singlePost.title}
               </h1>
-              <div className="flex justify-center text-gray-800">
+              <div className="flex justify-center text-gray-200">
                 <img
                   src={urlFor(singlePost.authorImage).url()}
                   alt={singlePost.name}
@@ -78,11 +78,11 @@ export default function SinglePost() {
           <img
             src={singlePost.mainImage.asset.url}
             alt={singlePost.title}
-            className="w-full object-cover rounded-t"
+            className="text-gray-800 w-full object-cover rounded-t"
             style={{ height: "400px" }}
           />
         </header>
-        <div className="px-8 lg:px-48 py-6 lg:py-20 prose lg:prose-xl max-w-full">
+        <div className="text-gray-800 px-8 lg:px-48 py-6 lg:py-20 prose lg:prose-xl max-w-full">
           <BlockContent
             blocks={singlePost.body}
             serializers={serializers}

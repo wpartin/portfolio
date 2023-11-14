@@ -35,7 +35,7 @@ export default function About() {
         className="absolute object-cover h-screen w-full"
       />
       <div className="p-5 pt-10 md:p-10 lg:pt-24 container mx-auto relative">
-        <section className="bg-blue-800 bg-opacity-90 rounded-lg shadow-2xl lg:flex p-6 lg:p-20">
+        <section className="bg-gray-800 bg-opacity-90 rounded-lg shadow-2xl lg:flex p-6 lg:p-20">
           <img
             src={urlFor(author.authorImage).url()}
             className="rounded w-32 h-32 lg:w-64 lg:h-64 lg:mr-8"
